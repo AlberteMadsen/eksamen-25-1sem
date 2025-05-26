@@ -1,0 +1,32 @@
+/* Baggrundsfarve til hele appen */
+body.bg-netto {
+    background-color:#ffd500; /* Lys lilla baggrund fra din mockup */
+}
+
+/* Header baggrund og logo */
+.bg-netto-header {
+    background: linear-gradient(to bottom, #ffdd44, #ffd500);
+    border-bottom: 5px solid #e0b400;
+}
+
+.netto-logo {
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+/* Knappernes skygger og afrundede hjørner */
+.card {
+    border-radius: 1rem;
+}
+
+.btn {
+    border-radius: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.7rem;
+    padding: 0.4em 0.6em;
+}
