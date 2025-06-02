@@ -4,62 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netto App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Ikoner -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Egen CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-netto">
+<body>
 
-<!-- Top banner med Netto logo -->
-<header class="bg-netto-header text-center py-3 shadow-sm">
-    <!-- Logo og navn -->
-    <img src="netto-logo.png" alt="Netto Logo" class="netto-logo" />
-    <h1 class="h4 fw-bold text-black">Dagligvare</h1>
+<!-- Øverste header -->
+<header class="header p-3 text-center">
+    <img src="Netto-logo-png" height="64" width="203"/>
 </header>
 
-<!-- Hovedindhold med to knapper -->
+<!-- Hovedindhold -->
 <main class="container py-4">
-    <!-- Sektion: Beholdning af vare -->
-    <section class="mb-4">
-        <!-- Kort med sort baggrund og tekst -->
-        <div class="card bg-black text-white text-center p-5 shadow">
-            <h2 class="h7 fw-bold">Beholdning af vare</h2>
-            <!-- Knap til mere info -->
-            <a href="#" class="btn btn-warning mt-3 fw-bold">Se mere her</a>
+    <h1 class="text-center fw-bold main-heading">Dagligvarer</h1>
+    <br>
+    <br>
+    <!-- Kort 1: Beholdning -->
+    <div class="card custom-card my-4 text-center">
+        <div class="card-body">
+            <h2 class="card-title section-heading">Beholdning af varer</h2>
+            <a href="#" class="btn custom-btn mt-3">Se mere her</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Sektion: Indkøbsliste -->
-    <section>
-        <!-- Kort med sort baggrund og tekst -->
-        <div class="card bg-black text-white text-center p-5 shadow">
-            <h2 class="h7 fw-bold">Indkøbsliste</h2>
-            <!-- Knap til mere info -->
-            <a href="#" class="btn btn-warning mt-3 fw-bold">Se mere her</a>
+    <!-- Kort 2: Indkøbsliste -->
+    <div class="card custom-card my-4 text-center">
+        <div class="card-body">
+            <h2 class="card-title section-heading">Indkøbsliste</h2>
+            <a href="underside.html" class="btn custom-btn mt-3">Se mere her</a>
+
+
         </div>
-    </section>
+    </div>
 </main>
 
-<!-- Bundmenu/navigation -->
-<nav class="navbar fixed-bottom bg-white border-top shadow-sm">
-    <div class="container d-flex justify-content-around text-center">
-        <!-- Hver ikon er en knap med tekst -->
-        <div class="nav-item">
-            <a href="#" class="nav-link text-muted small">Hjem</a>
-        </div>
-        <div class="nav-item">
-            <a href="#" class="nav-link text-muted small">Netto-avis</a>
-        </div>
-        <div class="nav-item position-relative">
-            <a href="#" class="nav-link text-muted small">Indkøbsliste</a>
-
-
-        </div>
-        <div class="nav-item">
-            <a href="#" class="nav-link text-muted small">Scan</a>
-        </div>
-        <div class="nav-item">
-            <a href="#" class="nav-link text-muted small">Kvitteringer</a>
-        </div>
+<!-- Navigation i bunden -->
+<nav class="bottom-nav navbar fixed-bottom bg-white border-top">
+    <div class="container d-flex justify-content-around text-center py-2">
+        <div><i class="bi bi-house"></i><br/><small>Hjem</small></div>
+        <div><i class="bi bi-book"></i><br/><small>Netto-avis</small></div>
+        <div><i class="bi bi-person"></i><br/><small>Dagligvarer</small></div>
+        <div><i class="bi bi-qr-code-scan"></i><br/><small>Scan</small></div>
+        <div><i class="bi bi-receipt"></i><br/><small>Kvitteringer</small></div>
     </div>
 </nav>
 
